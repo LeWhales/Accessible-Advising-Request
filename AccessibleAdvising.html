@@ -7,10 +7,28 @@
     <script src="AccessibleAdvising.js"></script>
 </head>
 
-<body>
-    <form>
-        <label id="profile"> </label>
-    </form>
-</body>
+<main>
+    <h1> Accessible Advising Request</h1>
+    <p>Fields marked “required” must be completed.</p>
+</main>
+
+<form>
+    <div>
+        <label for="Student-name">your name</label>
+        <input id="student-name" name="student-name" type="text" autocomplete="name" required>
+    </div>
+    <div>
+        <label for="Student-Email">your email</label>
+        <input id="student-email" email="student-email" type="text" autocomplete="email" required>
+    </div>
+
+
+    <div>
+        <label for="Student-field">your field </label>
+        <input id="student-field" email="student-field" type="text" autocomplete="field" required>
+    </div>
+
+
+</form>
 
 </html>
