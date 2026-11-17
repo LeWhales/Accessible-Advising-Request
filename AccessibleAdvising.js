@@ -1,15 +1,13 @@
-const form = document.querySelector("#Question");
+const name = document.querySelector("#studentname");
+const email = document.querySelector("#studentemail");
+const field = document.querySelector("studentfield");
 
-
-function instruction(question) {
+function name(question) {
     const NeedOne = question.advise.trim()
-    if (NeedOne === "yes") { }
+    if (NeedOne === "") { "Please type in the box" }
 };
-
-form.addEventListener("submit", () => {
-    const name = document.querySelector("#name").value;
-    if (name === ""); { showError("Required") };
-});
-form.instruction.has("username"); // Returns false
-formData.append("username", "Chris");
-formData.has("username"); // Returns true
+function validateRegistration(raw) {
+    const name = raw.name.trim();
+    const errors = {};
+    if (name.length < 2) errors.name = "Enter at least two characters.";
+};
