@@ -1,7 +1,8 @@
 # Accessible-Advising-Request
 
 What does this do?
-
+enter info such as name, email, day and time needed to get "help" 
+(of course this is just a blank slate)
 
 
 Requirements
