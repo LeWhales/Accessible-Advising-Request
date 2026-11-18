@@ -18,7 +18,7 @@ function validateRegistration(raw) {
     };
     if (!/^\S+@\S+\.\S+$/.test(email)) {
   errors.email = "Enter a valid email address.";
-} {
+}; {
         errors.email = "Enter a valid email address.";
     }
 
