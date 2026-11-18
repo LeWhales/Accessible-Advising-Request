@@ -3,7 +3,7 @@
 What does this do?
 enter info such as name, email, day and time needed to get "help" 
 (of course this is just a blank slate)
-
+its cant bring a proper error, and it leads nobody just a word bank
 
 Requirements
 
