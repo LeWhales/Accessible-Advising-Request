@@ -31,5 +31,10 @@ function validateRegistration(raw) {
     if (!time) {
         errors.time = "Select an appointment time.";
     }
+     if (date && time) {
+        const selectedDate = new Date(`${date}T${time}`);
+        if (Number.isNaN(selectedDate.getTime())) {
+            errors.time = "Enter a valid date and time.";
+        }
     const emailConfirm = /^{}[]/;
     if (!emailConfirm.test(email){errors.email = "Enter a Valid email";}
