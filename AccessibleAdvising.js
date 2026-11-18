@@ -16,7 +16,9 @@ function validateRegistration(raw) {
     if (name.length < 2) {
         errors.name = "Enter at least two characters.";
     };
-    if (!email.test(email)) {
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+  errors.email = "Enter a valid email address.";
+} {
         errors.email = "Enter a valid email address.";
     }
 
