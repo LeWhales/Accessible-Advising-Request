@@ -3,6 +3,7 @@ const email = document.querySelector("#Student-email");
 const field = document.querySelector("#Student-field");
 const time = document.querySelector("#Time-schedule");
 const date = document.querySelector("#Day-schedule");
+
 function validateRegistration(raw) {
     const name = String(raw.name ?? "").trim();
     const email = String(raw.email ?? "").trim();
@@ -12,7 +13,7 @@ function validateRegistration(raw) {
     const errors = {}
     const summary = []
 
-    if (name < 2) {
+    if (name.length < 2) {
         errors.name = "Enter at least two characters.";
     };
     if (!email.test(email)) {
@@ -30,3 +31,5 @@ function validateRegistration(raw) {
     if (!time) {
         errors.time = "Select an appointment time.";
     }
+    const emailConfirm = /^{}[]/;
+    if (!emailConfirm.test(email){errors.email = "Enter a Valid email";}
