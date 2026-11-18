@@ -13,7 +13,7 @@ function validateRegistration(raw) {
     const errors = {}
     const summary = []
 
-    if (name.length < 2) {
+    if (name.length <= 2) {
         errors.name = "Enter at least two characters.";
     };
     if (!/^\S+@\S+\.\S+$/.test(email)) {
@@ -38,5 +38,8 @@ function validateRegistration(raw) {
         if (Number.isNaN(selectedDate.getTime())) {
             errors.time = "Enter a valid date and time.";
         }
-    const emailConfirm = /^{}[]/;
-    if (!emailConfirm.test(email){errors.email = "Enter a Valid email";}
+    return {
+        valid: summary.length === 0,
+        errors,
+        summary
+    };
